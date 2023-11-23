@@ -1,0 +1,132 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  bottom: var(--main-border);
+  border-bottom: var(--bellow);
+  color: var(--below);
+  padding-bottom: 20px;
+}
+.find-icons__icon i:hover{
+  color: rgb(58, 191, 240);
+  transition: opacity 1s linear;
+  animation: popup 3s linear ;
+  filter: drop-shadow(3px 5px 1px rgb(57, 57, 58));
+}
+@keyframes popup {
+  0% {
+    transform: scale(.5);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  margin-top: 4px;
+  text-align: center;
+  color: black;
+}
+
+.recommended-friends {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.recommended-friends span {
+  display: flex;
+  justify-content: center;
+  margin-top: 105px;
+  padding-bottom: 122px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 18px;
+}
+.open-chat__header span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.open-post__column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+.open-post__column:last-child {
+  margin-bottom: 100px;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.open-post__hashtag {
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+.open-post__members {
+  display: flex;
+}
+
+.open-post__members span {
+  margin-left: 2px;
+}
+
+.divider {
+  display: block;
+  height: 19px;
+  width: 2px;
+  background-color: rgb(63, 61, 61);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+.open-post__member-status {
+  color: #f373c0;
+}
+
+.open-post__rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+  width: 87px;
+  height: 30px;
+  margin-top: -35px;
+  margin-left: 23px;
+}
+.open-post__rate:hover i {
+  will-change: transform;
+  animation: heartAnimation 1s linear infinite;
+}
+@keyframes heartAnimation {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
