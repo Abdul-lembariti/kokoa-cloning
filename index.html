@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="log.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in</title>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <i class="fa-solid fa-signal"></i>
-        <span>Vodacom</span>
+    <div class="login">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <i class="fa-solid fa-signal"></i>
+          <span>Vodacom</span>
+        </div>
+        <div class="status-bar__column">
+          <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+          <!-- bars -->
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-full"></i>
+          <!--battery icon-->
+        </div>
       </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
+      <div class="avatar">
+        <img src="avatar.png" />
       </div>
-      <div class="status-bar__column">
-        <!-- bars -->
-        <i class="fa-solid fa-wifi"></i>
-        <i class="fa-solid fa-battery-full"></i>
-        <!--battery icon-->
-      </div>
+      <h2>Login</h2>
+      <h3>Welcome User .....</h3>
+
+      <form action="friends.html" class="login-form">
+        <div class="textbox">
+          <input type="text" placeholder="Username" required />
+          <span> <i class="fa-regular fa-user"></i></span>
+        </div>
+        <div class="textbox">
+          <input type="password" placeholder="Password" required />
+          <span><i class="fa-solid fa-lock"></i> </span>
+        </div>
+
+        <input type="submit" value="Log In" />
+        <a href="#">Forgot your credentials?</a>
+      </form>
     </div>
-    <header class="header-bar">
-      <h1 class="header-bar__title">Welcome to KakaoTalk</h1>
-      <p class="header-bar__text">
-        If you have a kakao account use it for sign in..
-      </p>
-    </header>
-    <form id="login" action="friends.html" method="get">
-      <input
-        name="emal"
-        type="text"
-        placeholder="Email or Phone number"
-        required />
-      <input name="password" type="password" placeholder="Password" required />
-      <input type="submit" value="Log In" />
-      <a href="#">Find kakao Account and password</a>
-    </form>
+
     <div id="no-mobile">
       <span>Your Screen too Big</span>
       <img src="Screenshot 2023-11-24 115712.png" alt="" />
     </div>
+
     <script
       src="https://kit.fontawesome.com/a851e0b457.js"
       crossorigin="anonymous"></script>
