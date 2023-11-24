@@ -1,8 +1,10 @@
-.no-mobile {
+#no-mobile {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   z-index: 99;
   height: 100vh;
-  background-color: var(--yellow);
+  background-color: white;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -11,8 +13,11 @@
   align-items: center;
   font-size: 32px;
 }
+#no-mobile img {
+  margin-top: 23px;
+}
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 500px) {
   #no-mobile {
     display: none;
   }

@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: rgb(58, 191, 240);
   height: 500vh;
 }
 
@@ -9,7 +9,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  background-color: #abc1d1;
+  background-color: var(--maincolor);
 }
 #chat-screen .status-bar {
   z-index: 2;
@@ -111,22 +111,24 @@
   justify-content: flex-end;
 }
 .message__bubble--own {
-  background-color: var(--yellow);
+  background-color: white;
   padding: 13px;
   border-radius: 20px;
   border-top-right-radius: 0px;
 }
 .reply {
   position: fixed;
-  bottom: 0;
+  bottom: 70px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.7);
   display: flex;
   justify-content: space-between;
   padding: 5px 25px;
   box-sizing: border-box;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
 }
+
 .reply .reply__column:first-child {
   width: 10%;
 }
@@ -134,58 +136,67 @@
   width: 90%;
   position: relative;
 }
-.reply input {
-  padding: 12px;
-  width: 96%;
-  border: var(--main-border);
-  border-radius: 20px;
-  transition: all 0.6s ease-in-out;
+
+.reply i {
+  opacity: 0.5;
 }
+
+.reply input {
+  padding: 14px;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: 0;
-  top: 5px;
-  right: -3px;
+  right: 3px;
+  top: 7px;
 }
+
 .reply__column:last-child > i {
   right: 40px;
-  top: 20px;
+  top: 15px;
+  font-size: 20px;
 }
-.reply__column:last-child button {
-  background-color: var(--yellow);
+
+.reply__column button {
+  background-color: var(--maincolor);
   border: none;
   width: 30px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 50%;
+}
+
+.reply__column button i {
+  opacity: 1;
+  font-size: 19px;
 }
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
 }
-.reply i {
-  opacity: 0.5;
-}
-.reply__column button i {
-  opacity: 1;
-}
+
 .reply .reply__column:first-child,
-.reply .fa-face-smile,
+.reply .fa-smile-wink,
 .reply button {
   transition: opacity 0.3s ease-in-out;
 }
 
 .reply:focus-within .reply__column:first-child,
-.reply:focus-within .fa-face-smile,
+.reply:focus-within .fa-smile-wink,
 .reply:focus-within button {
   opacity: 0;
 }
 
-.reply:focus-within input {
-  width: 93vw;
-  transform: translateX(-60px) translateY(-70px);
+.reply input:focus {
+  width: 97vw;
+  transform: translateX(-13%) translateY(-80px);
 }
+
 .reply:focus-within {
-  transform: translateY(75px);
-  background-color: rgba(0, 0, 0, 0, 0);
+  transform: translateY(80px);
 }
