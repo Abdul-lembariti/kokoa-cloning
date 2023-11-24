@@ -6,23 +6,7 @@
   color: var(--below);
   padding-bottom: 20px;
 }
-.find-icons__icon i:hover{
-  color: rgb(58, 191, 240);
-  transition: opacity 1s linear;
-  animation: popup 3s linear ;
-  filter: drop-shadow(3px 5px 1px rgb(57, 57, 58));
-}
-@keyframes popup {
-  0% {
-    transform: scale(.5);
-  }
-  50% {
-    transform: scale(1.04);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-}
+
 .find-icons__icon {
   display: flex;
   flex-direction: column;
@@ -115,6 +99,13 @@ span {
 .open-post__rate:hover i {
   will-change: transform;
   animation: heartAnimation 1s linear infinite;
+}
+.open-post__rate i{
+  color: red;
+}
+.open-post__rate span{
+  color: black;
+  font-weight: 700;
 }
 @keyframes heartAnimation {
   0% {

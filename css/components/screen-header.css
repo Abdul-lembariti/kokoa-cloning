@@ -26,7 +26,6 @@
 .screen-header__title {
   font-size: 28px;
   font-weight: 600;
-  animation: moveWord 2s ease-in-out infinite alternate;
 }
 .screen-header__icons {
   display: flex;
@@ -34,15 +33,6 @@
   justify-content: space-between;
   gap: 23px;
   animation: moveIcons 2s ease-in-out alternate;
-}
-
-@keyframes moveWord {
-  0% {
-    transform: translateX(4rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 @keyframes moveIcons {

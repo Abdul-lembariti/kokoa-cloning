@@ -44,3 +44,46 @@
   display: flex;
   color: white;
 }
+
+.account {
+  height: 100vh;
+ display: flex;
+ flex-direction: column;
+  padding-top: 40px;
+}
+
+.account__title {
+  margin-bottom: 30px;
+}
+
+.account__icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.account__icon {
+  margin-right: 30px;
+  display: flex;
+}
+
+.account__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--maincolor);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+
+.account__icon-image img {
+  width: 65px;
+  height: 63px;
+  border-radius: 20px;
+}
+.account__icon-text{
+  align-items: center;
+  display: flex;
+  margin-top: 13px;
+}
