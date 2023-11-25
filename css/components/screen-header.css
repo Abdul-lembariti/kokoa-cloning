@@ -71,16 +71,6 @@ header {
   left: 450px;
   top: 25px;
 }
-.screen__ellipsisz {
-  background-color: rgb(58, 191, 240);
-  height: 8px;
-  width: 8px;
-  display: flex;
-  border-radius: 5px;
-  position: absolute;
-  left: 470px;
-  top: 25px;
-}
 .main-screen {
   display: flex;
   flex-direction: column;

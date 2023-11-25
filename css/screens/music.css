@@ -1,4 +1,4 @@
-.body{
+.body {
   background-color: #34d3ce;
 }
 
@@ -164,6 +164,7 @@
   margin-top: 20px;
   gap: 30px;
   overflow: auto;
+  margin-bottom: 12px;
 }
 .music-column__playlists::-webkit-scrollbar {
   display: none;
@@ -222,6 +223,9 @@
   display: flex;
   flex-direction: column;
   margin-right: 100px;
+}
+.song__status h3 {
+  font-weight: bold;
 }
 
 .dot {
